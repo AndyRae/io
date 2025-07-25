@@ -5,6 +5,16 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import Prism from 'prismjs';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-typescript';
+import 'prismjs/components/prism-jsx';
+import 'prismjs/components/prism-tsx';
+import 'prismjs/components/prism-python';
+import 'prismjs/components/prism-bash';
+import 'prismjs/components/prism-json';
+import 'prismjs/components/prism-css';
+import 'prismjs/components/prism-markdown';
 
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));
@@ -38,7 +48,31 @@ export function getAllPosts(): Post[] {
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
+export function highlightCode(code: string, language: string): string {
+	if (!language || !Prism.languages[language]) {
+		return code;
+	}
+	
+	try {
+		return Prism.highlight(code, Prism.languages[language], language);
+	} catch (error) {
+		return code;
+	}
+}
+
 export async function markdownToHtml(markdown: string): Promise<string> {
+	// First convert markdown to HTML
 	const result = await remark().use(html).process(markdown);
-	return result.toString();
+	let htmlContent = result.toString();
+	
+	// Add syntax highlighting to code blocks
+	htmlContent = htmlContent.replace(
+		/<pre><code class="language-(\w+)">([\s\S]*?)<\/code><\/pre>/g,
+		(match, language, code) => {
+			const highlightedCode = highlightCode(code, language);
+			return `<pre><code class="language-${language}">${highlightedCode}</code></pre>`;
+		}
+	);
+	
+	return htmlContent;
 }

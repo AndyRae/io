@@ -1,6 +1,84 @@
+/* Import Prism.js theme */
+@import 'prismjs/themes/prism-tomorrow.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for markdown content */
+.prose p {
+	margin-bottom: 1.5rem;
+}
+
+.prose p:last-child {
+	margin-bottom: 0;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.prose h1:first-child,
+.prose h2:first-child,
+.prose h3:first-child,
+.prose h4:first-child,
+.prose h5:first-child,
+.prose h6:first-child {
+	margin-top: 0;
+}
+
+.prose ul,
+.prose ol {
+	margin-bottom: 1.5rem;
+}
+
+.prose li {
+	margin-bottom: 0.5rem;
+}
+
+.prose blockquote {
+	margin: 1.5rem 0;
+	padding-left: 1rem;
+	border-left: 4px solid #e5e7eb;
+}
+
+.dark .prose blockquote {
+	border-left-color: #374151;
+}
+
+/* Code block styling */
+.prose pre {
+	background-color: #2d3748;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	margin: 1.5rem 0;
+	overflow-x: auto;
+}
+
+.prose code {
+	background-color: #f7fafc;
+	padding: 0.125rem 0.25rem;
+	border-radius: 0.25rem;
+	font-size: 0.875em;
+}
+
+.dark .prose code {
+	background-color: #4a5568;
+}
+
+.prose pre code {
+	background-color: transparent;
+	padding: 0;
+	border-radius: 0;
+	font-size: 0.875rem;
+	color: #e2e8f0;
+}
 
 ::selection {
 	background: #10b981;
