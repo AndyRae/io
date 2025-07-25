@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
+import { Navbar } from '@/components/navbar';
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://rae.li'),
@@ -35,7 +36,8 @@ export default function RootLayout({
 					enableSystem
 					disableTransitionOnChange
 				>
-					<div className='bg-white dark:bg-black min-h-screen'>{children}</div>
+					<Navbar />
+					<div className='bg-white dark:bg-black min-h-screen pt-16'>{children}</div>
 				</ThemeProvider>
 			</body>
 		</html>
