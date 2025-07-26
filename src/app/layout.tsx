@@ -4,13 +4,13 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Navbar } from '@/components/navbar';
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://rae.li'),
+	metadataBase: new URL('https://andyrae.io'),
 	title: 'Andy Rae | Software Engineer',
 	description: 'Andy Rae | Software Engineer',
 	openGraph: {
 		title: 'Andy Rae | Software Engineer',
 		description: 'Andy Rae | Software Engineer',
-		url: 'https://rae.li',
+		url: 'https://andyrae.io',
 		siteName: 'Andy Rae | Software Engineer',
 		locale: 'en-GB',
 		type: 'website',
