@@ -9,22 +9,17 @@ export const Hero = () => {
 				<h1 className='text-4xl font-light'>{`Hello! I'm Andy.`}</h1>
 
 				<p className='text-lg'>
-					{`I'm a Senior Software Engineer at the University of Nottingham,
-					in the`}
-					<NavLink
-						href='https://www.nottingham.ac.uk/health-informatics/index.aspx'
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Centre for Health Informatics
-					</NavLink>
-					{`, where I lead a team developing software for health research.`}
+					I build software to support health research - designing, developing, and delivering tools that help people work more effectively with data, systems, and each other.
 					<br />
 					<br />
-					{`I’m also the Head of Research Software at Nottingham University
-					Hospitals, delivering innovative software solutions
-					that enable and accelerate clinical research.`}
+					I lead the software team at the <NavLink href='https://www.nottingham.ac.uk/health-informatics/index.aspx' target='_blank' rel='noopener noreferrer'>Centre for Health Informatics</NavLink> at the University of Nottingham, and I’m also Head of Research Software at Nottingham University Hospitals.
+					<br />
+					<br />
+					More <NavLink href='/about'>about me</NavLink>
 				</p>
+
+
+
 			</div>
 			<div className='flex space-x-2 md:space-x-6 justify-center'>
 				<NavLink

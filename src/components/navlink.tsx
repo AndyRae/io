@@ -11,7 +11,7 @@ const NavLink = React.forwardRef<HTMLAnchorElement, NavLinkProps>(
 			href={href}
 			ref={ref}
 			className={cn(
-				'inline-flex items-center p-1 border-b-2 border-green-200',
+				'inline-flex items-center pb-0.5 border-b-2 border-green-200',
 				className
 			)}
 			{...rest}

@@ -21,14 +21,14 @@ export function Navbar() {
 						>
 							Home
 						</Link>
-						{/* <Link
+						<Link
 							href='/about'
 							className={`text-sm font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-100 ${
 								pathname === '/about' ? 'text-gray-900 dark:text-gray-100' : 'text-gray-500 dark:text-gray-400'
 							}`}
 						>
 							About
-						</Link> */}
+						</Link>
 					</div>
 				</div>
 			</div>
