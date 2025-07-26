@@ -7,7 +7,7 @@ export default function Home() {
 	return (
 		<main className='flex flex-col items-center pt-20 px-5'>
 			<Hero />
-			<section className='w-full max-w-xl mt-10'>
+			{/* <section className='w-full max-w-xl mt-10'>
 				<ul>
 					{posts.map((post) => (
 						<li key={post.slug} className='mb-4'>
@@ -18,7 +18,7 @@ export default function Home() {
 						</li>
 					))}
 				</ul>
-			</section>
+			</section> */}
 		</main>
 	);
 }
