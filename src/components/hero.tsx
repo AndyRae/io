@@ -12,7 +12,7 @@ export const Hero = () => {
 					I build software to support health research - designing, developing, and delivering tools that help people work more effectively with data, systems, and each other.
 					<br />
 					<br />
-					I lead the software team at the <NavLink href='https://www.nottingham.ac.uk/health-informatics/index.aspx' target='_blank' rel='noopener noreferrer'>Centre for Health Informatics</NavLink> at the University of Nottingham, and I’m also Head of Research Software at Nottingham University Hospitals.
+					I lead a software team at the <NavLink href='https://www.nottingham.ac.uk/health-informatics/index.aspx' target='_blank' rel='noopener noreferrer'>Centre for Health Informatics</NavLink> at the University of Nottingham, and I'm also Head of Research Software at Nottingham University Hospitals.
 					<br />
 					<br />
 					More <NavLink href='/about'>about me</NavLink>
