@@ -74,5 +74,11 @@ export async function markdownToHtml(markdown: string): Promise<string> {
 		}
 	);
 	
+	// Add target="_blank" and rel="noopener noreferrer" to external links
+	htmlContent = htmlContent.replace(
+		/<a href="(https?:\/\/[^"]+)"/g,
+		'<a href="$1" target="_blank" rel="noopener noreferrer"'
+	);
+	
 	return htmlContent;
 }

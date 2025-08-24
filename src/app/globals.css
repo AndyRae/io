@@ -80,6 +80,27 @@
 	color: #e2e8f0;
 }
 
+/* Markdown link styling to match NavLink component */
+.prose a {
+	display: inline-flex;
+	align-items: center;
+	padding-bottom: 0.125rem;
+	border-bottom: 2px solid #bbf7d0; /* green-200 */
+	text-decoration: none;
+	color: inherit;
+}
+
+.prose a:hover {
+	border-bottom-color: #86efac; /* green-300 for hover effect */
+}
+
+/* External link indicator */
+.prose a[href^="http"]::after {
+	content: " ↗";
+	font-size: 0.75em;
+	opacity: 0.7;
+}
+
 ::selection {
 	background: #10b981;
 }
