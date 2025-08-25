@@ -1,5 +1,5 @@
 ---
-title: "Bioindustry 4.0 Summer Webinar"
+title: "Bioindustry 4.0 - Summer Webinar"
 date: "2024-08-29"
 description: ""
 ---
