@@ -15,6 +15,9 @@ export const Hero = () => {
 					I lead a software team at the <NavLink href='https://www.nottingham.ac.uk/health-informatics/index.aspx' target='_blank' rel='noopener noreferrer'>Centre for Health Informatics</NavLink> at the University of Nottingham, and I'm also Head of Research Software at Nottingham University Hospitals.
 					<br />
 					<br />
+					In 2025 I co-founded <NavLink href='https://qurae.co.uk' target='_blank' rel='noopener noreferrer'>Qurae</NavLink>, to help bridge technology and healthcare to unlock global federated research.
+					<br />
+					<br />
 					More <NavLink href='/about'>about me</NavLink>
 				</p>
 
